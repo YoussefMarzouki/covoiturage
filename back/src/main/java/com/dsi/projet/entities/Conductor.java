@@ -9,7 +9,7 @@ public class Conductor extends User {
     private long rating;
 
     @OneToMany(mappedBy = "conducteur")
-    private List<Trajet> trajets;
+    private List<Trajet> trajets = new ArrayList<>();
 
     @OneToMany(mappedBy = "conducteur")
     private List<Car> voitureList = new ArrayList<>();
