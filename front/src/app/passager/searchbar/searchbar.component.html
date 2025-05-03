@@ -1,0 +1,20 @@
+<h1>Rechercher Covoiturage</h1>
+<form [formGroup]="searchForm" (ngSubmit)="rechercher()" class="container mt-3">
+  <div class="row g-2 align-items-end">
+    <div class="col-md-3">
+      <label class="form-label">Départ</label>
+      <input type="text" class="form-control" formControlName="depart" placeholder="Ville de départ">
+    </div>
+    <div class="col-md-3">
+      <label class="form-label">Destination</label>
+      <input type="text" class="form-control" formControlName="destination" placeholder="Ville de destination">
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Date et heure</label>
+      <input type="datetime-local" class="form-control" formControlName="dateHeure">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary w-100">Rechercher</button>
+    </div>
+  </div>
+</form>

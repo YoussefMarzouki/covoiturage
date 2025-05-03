@@ -14,6 +14,9 @@ import com.dsi.projet.controllers.TrajetController;
 import com.dsi.projet.entities.Car;
 import com.dsi.projet.entities.Conductor;
 import com.dsi.projet.entities.Trajet;
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
+import org.springframework.web.client.RestTemplate;
 
 
 @Transactional
@@ -27,6 +30,14 @@ public class Tp1Application implements CommandLineRunner {
 
 	@Autowired
 	private TrajetController trajetController;
+
+	@Bean  // Cette méthode sera gérée par Spring et injectable partout
+	public RestTemplate restTemplate() {
+		SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
+		factory.setConnectTimeout(5000); // Timeout de connexion : 5 secondes
+		factory.setReadTimeout(5000);    // Timeout de lecture : 5 secondes
+		return new RestTemplate(factory);
+	}
 
 
 	

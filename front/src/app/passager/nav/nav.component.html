@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="CovoitScolaire" height="32">
+    </a>
+
+    <!-- Menu burger mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Contenu principal -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- Liens navigation -->
+      <ul class="navbar-nav mx-auto ">
+        <li class="nav-item">
+          <a [routerLink]="['/passager', id_passager, 'accueil']"
+             routerLinkActive="actived"
+             class="nav-link">
+            Accueil
+          </a>
+        </li>
+        <li class="nav-item">
+          <a [routerLink]="['/passager', id_passager, 'chercher']"
+             routerLinkActive="actived"
+             class="nav-link">
+            Chercher
+          </a>
+        </li>
+      </ul>
+
+      <!-- Menu droit -->
+      <div class="d-flex">
+
+        <!-- Notifications simplifiées -->
+        <div class="dropdown me-2">
+          <button class="btn btn-light"
+                  type="button"
+                  data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><span class="dropdown-item">Pas de notifications</span></li>
+          </ul>
+        </div>
+
+        <!-- Profil ultra-simplifié -->
+        <div class="dropdown">
+          <button class="btn btn-light"
+                  type="button"
+                  data-bs-toggle="dropdown">
+            <i class="bi bi-person"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Modifier le profil</a></li>
+            <li><a class="dropdown-item" href="#">Déconnexion</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

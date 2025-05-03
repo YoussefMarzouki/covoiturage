@@ -41,8 +41,13 @@
                 },
                 {
                   "type": "anyComponentStyle",
+<<<<<<< HEAD
                   "maximumWarning": "2kB",
                   "maximumError": "4kB"
+=======
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+>>>>>>> 768fcdb (controller/service  maps pour recherche des lieux)
                 }
               ],
               "outputHashing": "all"

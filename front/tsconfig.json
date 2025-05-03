@@ -12,17 +12,24 @@
     "skipLibCheck": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+<<<<<<< HEAD
     "sourceMap": true,
     "declaration": false,
+=======
+>>>>>>> 768fcdb (controller/service  maps pour recherche des lieux)
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
+<<<<<<< HEAD
     "module": "ES2022",
     "lib": [
       "ES2022",
       "dom"
     ]
+=======
+    "module": "ES2022"
+>>>>>>> 768fcdb (controller/service  maps pour recherche des lieux)
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
